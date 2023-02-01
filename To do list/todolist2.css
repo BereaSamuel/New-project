@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(52, 153, 235);
+  height: 75vh;
+  width: 100%;
+}
+.container {
+  margin: 20px auto;
+  max-width: 630px;
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  border: 2px solid black;
+}
+
+/* Input and filters button */
+.container .inputfield {
+  display: flex;
+  height: 50px;
+}
+.inputfield input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid grey;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 0 20px 0 20px;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 22px;
+  border-bottom: 2px solid black;
+}
+.filters span:hover {
+  background: rgba(156, 156, 156, 0.575);
+}
+.filters {
+  margin-top: 5px;
+  position: relative;
+}
+.filters span {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 17px;
+}
+.controls .clearbtn {
+  background-color: rgba(143, 143, 241, 0.733);
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Todo list */
+
+.todolist {
+  margin: 20px 25px;
+}
+.todolist .task {
+  list-style: none;
+  font-size: 17px;
+  margin-bottom: 15px;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 10px;
+}
+.task label {
+  display: flex;
+}
+.task label p.checked {
+  background: rgb(70, 240, 70);
+}
+.task label input {
+  margin-right: 10px;
+}
+.controls,
+li {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.task .settings {
+  cursor: pointer;
+  position: relative;
+}
+
+/* Menu task / edit / delete */
+.settings .taskmenu {
+  position: absolute;
+  padding: 10px;
+  right: -5px;
+  bottom: -60px;
+  z-index: 2;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.2s ease;
+  border-radius: 5px;
+  background: rgb(250, 244, 242);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+.settings .taskmenu.show {
+  transform: scale(1);
+}
+.taskmenu li {
+  height: 25px;
+  font-size: 16px;
+  padding: 5px;
+  justify-content: flex-start;
+  margin-bottom: 2px;
+}
+.taskmenu li:last-child {
+  margin-bottom: o;
+}
+.taskmenu li:hover {
+  background-color: rgba(114, 185, 240, 0.274);
+}
+.taskmenu li i {
+  padding-right: 8px;
+}
+
+/* Image container */
+.imagetodo {
+  height: 380px;
+}
+.date {
+  color: white;
+  margin-top: -30px;
+  font-size: 20px;
+  text-align: right;
+  margin-right: 20px;
+}
+.datetime {
+  display: flex;
+  flex-direction: row;
+}
+
+/* share button */
+
+.sharebtn {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  color: black;
+}
+.sharebtn a i {
+  cursor: pointer;
+  font-size: 25px;
+  color: black;
+}
+.facebook i:hover {
+  color: blue;
+}
+.twitter i:hover {
+  color: rgba(16, 173, 247, 0.925);
+}
+.whatsapp i:hover {
+  color: rgb(18, 240, 18);
+}
+.linkedin i:hover {
+  color: rgb(6, 6, 182);
+}
+.pinterest i:hover {
+  color: red;
+}

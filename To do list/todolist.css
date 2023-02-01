@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+body {
+  height: 100vh;
+  background-image: url(./todolist.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  position: relative;
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.addtask {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+.addtask > input[type="text"] {
+  width: 85%;
+  border: 2px solid red;
+  color: black;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+}
+
+.addtask button {
+  margin: 0 15px;
+  border: 2px solid red;
+  color: black;
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+.notcomplet,
+.complet {
+  margin: 5px 0;
+  padding: 20px;
+}
+h2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+ol {
+  list-style: none;
+  counter-reset: task-counter;
+}
+ol li {
+  width: 100%;
+  padding: 20px;
+  margin: 5px 0;
+  border: 1px solid red;
+  border-radius: 30px;
+  font-size: 18px;
+  counter-increment: task-counter;
+}
+ol.complet li {
+  background: greenyellow;
+}
+ol li::before {
+  content: counter(task-counter);
+  background: blue;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 2rem;
+  color: white;
+  margin-right: 0.5rem;
+}
+li button {
+  float: right;
+  padding: 5px;
+  font-size: 25px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}

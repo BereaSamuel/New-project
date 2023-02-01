@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todolist2.css" />
+    <script
+      src="https://kit.fontawesome.com/2b5a6d05cb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imagetodo">
+        <img src="./moon.jpg" alt="" />
+        <div id="date" class="date"></div>
+      </div>
+      <div class="inputfield">
+        <input type="text" placeholder="Add e new task" />
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span class="active" id="pending">Pending</span>
+          <span class="active" id="completed">Completed</span>
+        </div>
+        <button class="clearbtn">Clear All</button>
+      </div>
+      <ul class="todolist"></ul>
+      <div class="sharebtn">
+        <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="pinterest"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+      <div class="datetime">
+        <div id="result" class="result"></div>
+        <div id="timeshow" class="result"></div>
+      </div>
+    </div>
+    <script src="todolist2.js"></script>
+  </body>
+</html>
